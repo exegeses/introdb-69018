@@ -7,4 +7,11 @@ create table test_fechas
     fecha date not null
 );
 
-INSERT
+INSERT INTO test_fechas
+    VALUES
+        (DEFAULT, 'standard', '2008-12-12' ),
+        (DEFAULT, 'sin comillas', 2008-12-12 ),
+        (DEFAULT, 'slashes', '2008/12/12' ),
+        (DEFAULT, 'sólo numero', '20081212' ),
+        (DEFAULT, 'europeo ', '12122008' ),
+        (DEFAULT, 'europeo guines', '12-12-2008' );
